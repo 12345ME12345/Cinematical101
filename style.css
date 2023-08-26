@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:regular);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: darkcyan;
+    color: white;
+}
+header{
+    padding: 15px;
+    background-color: blue;
+    display: grid;
+    border-radius: 15px;
+    margin: 5px;
+    grid-template-columns: auto 1fr auto;
+    gap: 15px;
+    box-shadow: 15px 15px 30px red;
+    transition: 1s;
+}
+header:hover{
+    background-color: red;
+    box-shadow: 15px 15px 30px blue;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    align-self: center;
+}
+ion-icon{
+    font-size: 25px;
+    color: white;
+    border-radius: 50%;
+}
+.icons{
+    background-color: darkblue;
+    border-radius: 15px;
+    padding: 15px;
+    transition: 500ms;
+    box-shadow: 5px 5px 10px deepskyblue;
+}
+.icons:hover{
+    background-color: deepskyblue;
+    box-shadow: 5px 5px 10px darkblue;
+}
+.banner{
+    height: 400px;
+    background-image: url(./img/banner.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.icons-wrapper{
+    display: grid;
+}
+.banner ion-icon{
+    margin: 20px;
+    transition: 500ms;
+}
+.banner ion-icon:hover{
+    transform: scale(3) rotate(3600deg);
+}
+footer{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    background-color: darkblue;
+    padding: 15px;
+    border-radius: 15px;
+    align-items: center;
+}
+footer h1{
+    margin: 20px;
+}
+.search-bar{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 15px;
+    padding: 25px;
+    background-color: deepskyblue;
+    border-radius: 15px;
+    margin: 10px;
+}
+.search-bar ion-icon{
+    font-size: 35px;
+    background-color: darkblue;
+}
+.search-bar button{
+    border-radius: 15px;
+    border: 2px solid white;
+    color: white;
+    background-color: darkblue;
+}
+.search-bar input{
+    background-color: dodgerblue;
+    border: 5px solid white;
+    border-radius: 15px;
+}
+.movie{
+    width: 425px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: repeat(6, auto);
+    border: 5px solid white;
+    border-radius: 15px;
+}
+.movie img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 25px;
+    grid-column: 1/2;
+    grid-row: 1/7;
+}
+.sus{
+    background-color: goldenrod;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+.unsus{
+    background-color: darkblue;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+#movie-wrapper{
+    display: grid;
+    justify-items: center;
+    gap: 15px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+form{
+    display: grid;
+    background-color:deepskyblue ;
+    border-radius: 15px;
+    gap: 15px;
+    padding: 10px;
+    margin: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+}
+#promo h2{
+    text-align: center;
+}
+form button{
+    background-color: dodgerblue;
+    grid-column: 1/3;
+}
